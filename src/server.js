@@ -1,6 +1,5 @@
 require("./config/env");
 
-const connectDB = require("./config/database");
 const express = require("express");
 const { createCorsMiddleware } = require("./config/cors");
 const { setActiveSession } = require("./services/browser");
@@ -81,9 +80,4 @@ function startServer() {
   return server;
 }
 ;
- async function bootstrap() {
-  await connectDB();
-  startServer();
-}
-
-bootstrap();
+ startServer();
