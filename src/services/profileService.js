@@ -1,5 +1,5 @@
 const { getAuthenticatedSession, withServicePage, SRM_LOGIN_URL } = require("./browser");
-const Student = require("../models/Student");
+const Student = require("../models/student");
 const baseData = {
   studentName: " ",
   registerNumber: " ",
